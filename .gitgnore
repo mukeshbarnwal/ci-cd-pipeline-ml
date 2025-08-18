@@ -1,0 +1,58 @@
+# Python cache/bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Virtual environments
+venv/
+venv1/
+.venv/
+env/
+ENV/
+
+# IDE/editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs and outputs
+*.log
+logs/
+*.out
+*.err
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# pytest cache
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# CI/CD related
+# (if you store pipeline configs in a folder, keep yaml but ignore temp files)
+ci-cd-ml/*.tmp
+*.lock
