@@ -14,11 +14,10 @@ client = TestClient(app)
 @patch("app.main.requests.post")
 def test_predict_positive(mock_post):
     mock_post.return_value.json.return_value = [
-        {"category": "POSITIVE", "score": 0.99}
+        {"category": "Shipping"}
     ]
 
-    response = client.post("/predict", json={"text": "I love this product"})
+    response = client.post("/predict", json={"text": "delivery issue"})
 
     assert response.status_code == 200
-    assert response.json()["category"] == "POSITIVE"
-    
+    assert response.json()["category"] == "Shipping"
