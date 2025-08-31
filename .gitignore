@@ -10,6 +10,7 @@ venv/
 venv1/
 .venv/
 env/
+.env
 ENV/
 
 # IDE/editor settings
