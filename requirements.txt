@@ -5,3 +5,6 @@ pytest
 httpx
 pytest-cov
 flake8
+openai
+python-dotenv
+instructor
